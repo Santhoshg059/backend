@@ -29,18 +29,27 @@ const userSchema = new mongoose.Schema({
         type: String,
         required: [true, "Password is required"]
     },
-    status: {
-        type: Boolean,
-        default: true
-    },
-    role: {
+    
+    mobileNumber: {
         type: String,
-        default: "user" // Default role should be 'user'
+        // required: [true, "Number is required"]
+    },
+    vehicleName:{
+        type: String,
+    },
+    vehicleNumber:{
+        type: String,
+    },
+    licenseNumber:{
+        type: String,
+    },
+    profileImage:{
+        type: String, 
     },
     createdAt: {
         type: Date,
         default: Date.now()
-    }
+    },
 }, {
     collection: 'user',
     versionKey: false
