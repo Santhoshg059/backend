@@ -7,7 +7,7 @@ import UserModel from './src/models/user.js';
 import bcrypt from 'bcryptjs';
 import RideModel from './src/models/ride.js';
 import jwt from 'jsonwebtoken'; // Import jwt library for backend
-import NotificationModel from './src/models/notification.js';
+import NotificationModel from './src/models/Notification.js'
 import multer from 'multer';
 import path from 'path';
 
